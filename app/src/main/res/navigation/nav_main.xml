@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/mainFragment">
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.fiap.telesaude.ui.fragments.MainFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.fiap.telesaude.ui.fragments.RegisterFragment"
+        android:label="RegisterFragment"
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_registerFragment_to_homeFragment2"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.fiap.telesaude.ui.fragments.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment2"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.fiap.telesaude.ui.fragments.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_consultationListFragment"
+            app:destination="@id/consultationListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/consultationListFragment"
+        android:name="com.fiap.telesaude.ui.fragments.ConsultationListFragment"
+        android:label="ConsultationListFragment"
+        tools:layout="@layout/fragment_consultation_list">
+        <action
+            android:id="@+id/action_consultationListFragment_to_consultationFragment"
+            app:destination="@id/consultationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/consultationFragment"
+        android:name="com.fiap.telesaude.ui.fragments.ConsultationFragment"
+        android:label="ConsultationFragment"
+        tools:layout="@layout/fragment_consultation">
+        <action
+            android:id="@+id/action_consultationFragment_to_schedulingFragment"
+            app:destination="@id/schedulingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/schedulingFragment"
+        android:name="com.fiap.telesaude.ui.fragments.SchedulingFragment"
+        android:label="SchedulingFragment"
+        tools:layout="@layout/fragment_scheduling" />
+</navigation>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_primary">#007575</color>
+    <color name="color_primary_variant">#00ABD3</color>
+    <color name="color_on_primary">#00ABD3</color>
+    <color name="color_secondary">#000A54</color>
+    <color name="color_secondary_variant">#000A54</color>
+    <color name="color_on_secondary">#000A54</color>
+    <color name="color_accent">#FFFFFF</color>
+    <color name="color_success">#AEEA00</color>
+    <color name="color_warning">#FFBB33</color>
+    <color name="color_error">#CC0000</color>
+    <color name="color_background">#F8F8F8</color>
+</resources>

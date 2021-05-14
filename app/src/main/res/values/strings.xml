@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TeleSaude</string>
+    <string name="title_home">Início</string>
+    <string name="title_services">Serviços</string>
+</resources>
