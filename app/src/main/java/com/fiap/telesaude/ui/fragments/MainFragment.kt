@@ -5,9 +5,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.fiap.telesaude.com.fiap.telesaude.ui.fragments.BaseFragment
 import com.fiap.telesaude.databinding.FragmentMainBinding
 
-class MainFragment : Fragment() {
+class MainFragment : BaseFragment() {
 
     private lateinit var viewDataBinding: FragmentMainBinding
 

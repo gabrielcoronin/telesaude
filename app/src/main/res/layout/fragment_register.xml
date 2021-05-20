@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -49,6 +50,7 @@
                 android:text="CPF"/>
 
             <EditText
+                android:id="@+id/register_cpf_id"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="number"
@@ -71,6 +73,7 @@
                 android:text="Email"/>
 
             <EditText
+                android:id="@+id/register_email_id"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
@@ -93,6 +96,7 @@
                 android:text="Senha"/>
 
             <EditText
+                android:id="@+id/register_senha_id"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
@@ -101,6 +105,7 @@
         </LinearLayout>
 
         <Button
+            android:id="@+id/btn_register_id"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@+id/senha_id"

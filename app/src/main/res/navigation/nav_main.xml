@@ -61,10 +61,23 @@
         <action
             android:id="@+id/action_consultationFragment_to_schedulingFragment"
             app:destination="@id/schedulingFragment" />
+        <argument
+            android:name="consultName"
+            app:argType="string" />
+        <argument
+            android:name="consultDescription"
+            app:argType="string" />
+        <argument
+            android:name="consultationId"
+            app:argType="integer" />
     </fragment>
     <fragment
         android:id="@+id/schedulingFragment"
         android:name="com.fiap.telesaude.ui.fragments.SchedulingFragment"
         android:label="SchedulingFragment"
-        tools:layout="@layout/fragment_scheduling" />
+        tools:layout="@layout/fragment_scheduling" >
+        <argument
+            android:name="consultationId"
+            app:argType="integer" />
+    </fragment>
 </navigation>
