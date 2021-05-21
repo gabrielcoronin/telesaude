@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "456765242289",
+    "project_id": "telesaude-cd57e",
+    "storage_bucket": "telesaude-cd57e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:456765242289:android:45756b774aeb6900d8db90",
+        "android_client_info": {
+          "package_name": "br.com.fiap.telesaude"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "456765242289-6lang4p04j39jn45q1uktbl6oa2jfgh0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAi_cP5JHvCRLqXCaLevXcgUHMW-q1m5bA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "456765242289-6lang4p04j39jn45q1uktbl6oa2jfgh0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

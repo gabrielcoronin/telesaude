@@ -19,9 +19,9 @@ class SchedulingFragment : BaseFragment() {
 
     private fun setupListener() {
         viewDataBinding.apply {
-            btnAgendarId.setOnClickListener(
+            btnAgendarId.setOnClickListener{}
                 
-            )
+
         }
     }
 }
