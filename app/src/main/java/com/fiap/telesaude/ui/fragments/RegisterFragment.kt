@@ -52,11 +52,13 @@ class RegisterFragment : BaseFragment() {
                 }
                 .addOnFailureListener { exception ->
                     Log.e("TELESAUDE", "Register exception: ${exception.message}")
+                    stopLoading()
                     Toast.makeText(requireContext(), "Erro ao cadastrar usuário.", Toast.LENGTH_SHORT).show()
                 }
         }
         .addOnFailureListener { exception ->
             Log.e("TELESAUDE", "Register exception: ${exception.message}")
+            stopLoading()
             Toast.makeText(requireContext(), "Erro ao cadastrar usuário.", Toast.LENGTH_SHORT).show()
         }
 }
