@@ -41,19 +41,13 @@ class ConsultListAdapter(private val fragment: ConsultationListFragment) :
                 textPrice.text = "R$ ${item.consultPrice}"
                 executePendingBindings()
             }
-            setupListener(fragment, item)
+            setupListeners(fragment, item)
         }
 
-        private fun setupListener(fragment: ConsultationListFragment, item: ConsultModel) {
+        private fun setupListeners(fragment: ConsultationListFragment, item: ConsultModel) {
             binding.apply {
                 btnAddId.setOnClickListener {
-                    fragment.navigate(
-                        ConsultationListFragmentDirections.actionConsultationListFragmentToConsultationFragment(
-                            item.consultName,
-                            item.consultDescription,
-                            item.consultId
-                        )
-                    )
+                    fragment.navigate(ConsultationListFragmentDirections.actionConsultationListFragmentToConsultationFragment(item.consultName!!, item.consultDescription!!, item.consultId))
                 }
             }
         }

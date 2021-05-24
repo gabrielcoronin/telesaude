@@ -77,7 +77,10 @@
         android:label="SchedulingFragment"
         tools:layout="@layout/fragment_scheduling" >
         <argument
-            android:name="consultationId"
-            app:argType="integer" />
+            android:name="consultName"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_schedulingFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
     </fragment>
 </navigation>

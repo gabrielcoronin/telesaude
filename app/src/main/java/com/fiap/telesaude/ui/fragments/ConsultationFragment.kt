@@ -13,27 +13,19 @@ class ConsultationFragment : BaseFragment() {
     private val args by navArgs<ConsultationFragmentArgs>()
     private lateinit var viewDataBinding: FragmentConsultationBinding
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         viewDataBinding = FragmentConsultationBinding.inflate(inflater, container, false)
-        setupListener()
+        setupListeners()
         return viewDataBinding.root
     }
 
-    private fun setupListener() {
+    private fun setupListeners() {
         viewDataBinding.apply {
+            consultNameId.text = args.consultName
+            consultDescriptionId.text = args.consultDescription
             btnAgendarId.setOnClickListener {
-                navigate(
-                    ConsultationFragmentDirections.actionConsultationFragmentToSchedulingFragment(
-                        args.consultationId
-                    )
-                )
+                navigate(ConsultationFragmentDirections.actionConsultationFragmentToSchedulingFragment(args.consultName))
             }
         }
     }
-
-
 }

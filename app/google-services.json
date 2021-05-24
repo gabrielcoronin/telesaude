@@ -7,12 +7,20 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:456765242289:android:45756b774aeb6900d8db90",
+        "mobilesdk_app_id": "1:456765242289:android:bae0962418b19f02d8db90",
         "android_client_info": {
-          "package_name": "br.com.fiap.telesaude"
+          "package_name": "com.fiap.telesaude"
         }
       },
       "oauth_client": [
+        {
+          "client_id": "456765242289-gg7ucf4n47e3ombav5los861uu3ltnd1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fiap.telesaude",
+            "certificate_hash": "1f9aa3cd37fe98577208181772119b9c1ef724f6"
+          }
+        },
         {
           "client_id": "456765242289-6lang4p04j39jn45q1uktbl6oa2jfgh0.apps.googleusercontent.com",
           "client_type": 3
